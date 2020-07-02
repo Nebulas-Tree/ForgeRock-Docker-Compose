@@ -1,0 +1,6 @@
+.idea
+volumes/am*/.openamcfg
+volumes/am*/am
+volumes/cfg*
+volumes/cts*
+volumes/ds*
