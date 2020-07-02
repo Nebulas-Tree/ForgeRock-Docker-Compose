@@ -1,9 +1,9 @@
 ## Instructions
-1. (If required) Reset AM and DS
-2. Run `docker-compose up --build`
+Take note that this repository does not contain the binaries and you will have to download them from ForgeRock official website.
+
+More information and instructions can be found here: https://nebulastree.com/blog/how-to-quickly-set-up-a-development-environment-for-forgerock-access-manager-using-docker
 
 ## Useful Linux commands
-- Get main IP address: ip route get $(ip route show 0.0.0.0/0 | grep -oP 'via \K\S+') | grep -oP 'src \K\S+'
 - Reset AM and DS: sudo rm -rf volumes/am/.openamcfg volumes/am/am volumes/cfg* volumes/cts*
 - Bootstrap AM using Amster: docker exec am.example.com ./bootstrap.sh Strn9Psswrd cfg.example.com
 - Running interactive Amster: docker exec -it am.example.com ./amster
